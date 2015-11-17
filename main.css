@@ -1,0 +1,46 @@
+body{
+  text-align: center;
+}
+
+.form-area{
+  width: 70%;
+  background-image: url(search.png);
+  background-size: auto  100%;
+  margin: auto;
+}
+
+.search-bar{
+  margin: 2% auto;
+  width:85%;
+  height: 35px;
+  font-size: 150%;
+}
+
+.search-item{
+  margin: auto 160px;
+}
+
+.search-item ul{
+  padding: 0%;
+}
+
+ul li{
+  list-style: none;
+}
+
+.bookmark-content{
+  margin: 1%  auto  auto -95%;
+  font-size: 170%;
+  color: #8e8e8e;
+}
+
+.bookmark-datetime{
+  margin-right: -92%;
+  color: #c3c3c3;
+  font-style: italic;
+}
+
+hr{
+  border-style: dashed;
+  border-color: #b2b2b2;
+}
