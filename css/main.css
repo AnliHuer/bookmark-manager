@@ -29,13 +29,13 @@ ul li{
 }
 
 .bookmark-content{
-  margin: 1%  auto  auto -95%;
-  font-size: 170%;
+  text-align: left;
+  font-size: 120%;
   color: #8e8e8e;
 }
 
 .bookmark-datetime{
-  margin-right: -92%;
+  margin-right: -75%;
   color: #c3c3c3;
   font-style: italic;
 }
