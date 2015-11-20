@@ -3,8 +3,8 @@ body{
 }
 
 .form-area{
-  width: 70%;
-  background-image: url(../images/search.png);
+  width: 80%;
+  background-color: #e785f2;
   background-size: auto  100%;
   margin: auto;
 }
@@ -31,7 +31,7 @@ ul li{
 .bookmark-content{
   text-align: left;
   font-size: 120%;
-  color: #8e8e8e;
+  color: #494949;
 }
 
 .bookmark-datetime{
@@ -43,4 +43,9 @@ ul li{
 hr{
   border-style: dashed;
   border-color: #b2b2b2;
+}
+
+.highlight{
+  background-color: #ea0981;
+  color: #ffffff;
 }

@@ -11,33 +11,31 @@ function createTime(value) {
 }
 
 
-function getListString(data){
-    var searchList = $('.search-list');
-    var list = '';
+$(function() {
+  var searchInput = $('.search-bar');
+  var searchList = $('.search-list');
+  var list = '';
 
-    data.forEach(function(val){
+  $.getJSON('data/bookmark.json', function(data) {
+    data.forEach(function(val) {
       list += "<li class = \'bookmark-content\'>" + val.title + "</li> <li class = \'bookmark-datetime\'>Create@" + createTime(val.created) + "</li>" + "<hr>";
     });
     searchList.html(list);
-}
-
-
-$(function() {
-  var searchInput = $('.search-bar');
-
-  $.getJSON('data/bookmark.json',function(data){
-    getListString(data);
   });
 
   searchInput.on('keyup', function() {
     var word = searchInput.val();
+    var regExp = new RegExp(word, 'gim');
+    list = '';
+    
     $.getJSON('data/bookmark.json', function(data) {
-      var regExp = new RegExp(word, 'gim');
-
-      var newData = data.filter(function(val) {
-        return val.title.search(regExp) > 0;
+      data.forEach(function(val) {
+        if (val.title.search(regExp) > 0) {
+          var newTitle = val.title.replace(regExp, '<span class="highlight">$&</span>');
+          list += "<li class = \'bookmark-content\'>" + newTitle + "</li> <li class = \'bookmark-datetime\'>Create@" + createTime(val.created) + "</li>" + "<hr>";
+        }
       });
-      getListString(newData);
+      searchList.html(list);
     });
 
   });
