@@ -6,7 +6,7 @@ body{
   width: 80%;
   background-color: #e785f2;
   background-size: auto  100%;
-  margin: auto;
+  margin: 10px auto;
 }
 
 .search-bar{
@@ -17,7 +17,7 @@ body{
 }
 
 .search-item{
-  margin: auto 160px;
+  margin: auto 100px;
 }
 
 .search-item ul{
@@ -42,10 +42,10 @@ ul li{
 
 hr{
   border-style: dashed;
-  border-color: #b2b2b2;
+  border-color: #e785f2;
 }
 
 .highlight{
-  background-color: #ea0981;
+  background-color: #e785f2;
   color: #ffffff;
 }
