@@ -4,7 +4,7 @@ body{
 
 .form-area{
   width: 70%;
-  background-image: url(search.png);
+  background-image: url(../images/search.png);
   background-size: auto  100%;
   margin: auto;
 }
